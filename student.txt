@@ -1,0 +1,5 @@
+Student name: David Kutej 
+Student number: 728353
+Student class: IT1E
+GitHub Repository: https://github.com/dkuteda/Church-website
+GitHub Pages URL: your github pages URL
