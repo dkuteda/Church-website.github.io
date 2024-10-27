@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsterdam International Christian Church</title>
+    <link rel="stylesheet" href="css/design3.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <i class="icon"></i> <!-- Replace with your preferred icon -->
+            <span>IAMSTERDAM</span>
+            <button class="hamburger" onclick="toggleMenu()">☰</button> 
+        </section>
+        <nav>                                 
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Faithtalks.html">Bible talks</a></li>
+                <li><a href="Midweek.html">Midweek</a></li>
+                <li><a href="Campus.html">Campus devotional</a></li>
+                <li><a href="Mercy.html">Mercy project</a></li>
+                <li><a href="Contact.html">Contact</a></li>                
+            </ul>                         
+        </nav>
+    </header> 
+
+    <main>
+        <section>
+            <article class="container content">
+                <img src="pic.img/mercy1.jpg" alt="Upcoming Events Image" class=detail-img>
+                <img src="pic.img/mercy2.jpg"alt="Upcoming Events Image" class=detail-img>  
+            </article>
+        </section>
+
+        <section>
+            <article class="container">                
+                <h2>Mercy project Amsterdam</h2>
+                <h2>What is it all about, are you asking?</h2>
+                <p>Mercy project is here to show love and interest to our city. 
+                    We want to show attention to those who work hard. Like a bus drivers, street cleaners etc. 
+                    Mercy project is a time when we go out into streets in todays rush days.</p>
+                <h2>What are we doing?</h2>
+                <p>There are many activities we are participating in. 
+                    We are working together with several other institutes. For example Serve the city or Foodbank Amsterdam. 
+                    Sometimes we go out and clean the streets. Or we go encourage buss drivers with some kind words. 
+                    We organise programs for elders and youth of this city. 
+                    Or we help to collect some food for those who don’t have enough for themselves!.</p>
+                <h2>Contact us, to find out where are we this month! </h2>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container">
+            <article class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p>123 Church St, Amsterdam, NL</p>
+                <p>Phone: +31 20 123 4567</p>
+                <p>Email: info@amsterdamchurch.com</p>
+            </article>
+
+            <article class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/amsterdamicc"><i class="icon">🔗</i> Facebook</a>
+                <a href="https://www.tiktok.com/@amsinternationalchurch"><i class="icon">🔗</i> Tik Tok</a>
+                <a href="https://www.instagram.com/amsterdamdisciples/"><i class="icon">🔗</i> Instagram</a>
+            </article>
+            
+            <article class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </article>
+            
+            <article class="footer-section copyright">
+                <p>&copy; 2024 Amsterdam International Christian Church. All rights reserved.</p>
+            </article>
+        </section>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

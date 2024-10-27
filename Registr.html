@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="css/design4.css">
+</head>
+<body>
+   <section class="registr-container">
+    <header>Registration form</header>
+    <form id="registrationForm" class="form">
+      <section class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" required>
+      </section>
+
+      <section class="input-box">
+        <label>Email address</label>
+        <input type="email" placeholder="Enter email address" required>
+      </section>
+
+      <section class="column">
+        <section class="input-box">
+          <label>Phone number</label>
+          <input type="text" placeholder="Enter phone number" required>
+        </section>
+
+        <section class="input-box">
+          <label>Birth date</label>
+          <input type="date" placeholder="Enter birth date" required>
+        </section>
+      </section>
+
+      <section class="gender-box">
+        <h3>Gender</h3>
+        <section class="gender-option">
+          <section class="gender">
+            <input type="radio" id="check-male" name="gender" checked>
+            <label for="check-male">Male</label>
+          </section>
+          <section class="gender">
+            <input type="radio" id="check-female" name="gender">
+            <label for="check-female">Female</label>
+          </section>
+          <section class="gender">
+            <input type="radio" id="check-other" name="gender">
+            <label for="check-other">Prefer not to say</label>
+          </section>
+        </section>
+      </section>
+      <section class="input-box address">
+        <label>Address</label>
+        <section class="column">
+          <input type="text" placeholder="Enter street address" required>
+          <input type="text" placeholder="Enter your city" required>
+        </section>
+        <section class="column">
+          <input type="text" placeholder="Enter house number" required>
+          <input type="text" placeholder="Enter postal code" required>
+        </section>
+      </section>
+
+      <section class="column">
+        <a class="button-link common-button" href="Contact.html">Return</a>
+        <button type="button" id="confirmButton" class="button-link common-button">Confirm</button>
+      </section>    
+    </form>      
+   </section>
+
+   <script src="js/validation.js"></script>
+</body>
+<script>
+  document.getElementById('confirmButton').addEventListener('click', function() {
+  const form = document.getElementById('registrationForm');
+  if (form.checkValidity()) {
+    window.location.href = 'Confirm.html';
+  } else {
+    form.reportValidity();
+  }
+  });
+</script>
+</html>
