@@ -1,8 +1,29 @@
+.TesingText{ font-family: 'Noto Sans Wancho';}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: rgb(255, 140, 140);
 }
+strong {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------------------------------------------------*/
+.Visited a:visited { color: purple; }
+nav > ul { list-style-type: none; }
+nav a:active {
+  font-weight: bold;
+  font-style: italic;
+}
+img { float: left; margin-right: 20px; }
+
+aside > p { color: blue; }
+
+.cookies-message { position: fixed; bottom: 0; width: 100%; background-color: #3e0480; z-index: 9999; padding: 10px; text-align: center; }
+/* ---------------------------------------------------------------------------------------*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -19,6 +40,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .logo .icon {
   margin-right: 10px;
 }
@@ -71,10 +93,22 @@ main {
 }
 h2 {
   color: #000000;
+  line-height: 1.1;
+  letter-spacing: 1.0;
+}
+.Uppercase
+{
+  text-transform: uppercase;
 }
 p {
+  word-spacing: 3px;
+  text-indent: 30px;
   color: #000000;
 }
+p::first-letter { 
+  font-size: 1.3em; font-weight: bold; 
+}
+
 footer p {
   color: #ffffff;
 }
@@ -168,6 +202,15 @@ footer {
 .button-link a:visited {
   color: inherit; 
 }
+/*---------------------------------------------------------------------------------------------------*/
+table tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+table tr:nth-child(odd) {
+  background-color: #FFF;
+}
+/*---------------------------------------------------------------------------------------------------*/
 
 
 @media (max-width: 768px) {

@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="David Kutej">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amsterdam International Christian Church</title>
-    <link rel="stylesheet" href="css/design3.css">
+    <link rel="stylesheet" type="text/css" href="css/design3.css" href="css/design4.css">
+    <link rel="icon" href="img/fish.webp" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -28,23 +30,27 @@
     <main>
         <section>
             <article class="container">
-                <img src="pic.img/Havon.png" alt="About Us Image" class="responsive-img">
-                <h2>We are a non-denominational Bible-based International Christian Church with a dream to evangelise the nations in our generation</h2>
+                <img src="img/Havon.png" alt="About Us Image" title="Worship song" class="responsive-img">
+                <h1><strong>We are a non-denominational Bible-based International Christian Church with a dream to evangelise the nations in our generation</strong></h1>
             </article>
         </section>
         <section>
             <article class="container content">
-                <img src="pic.img/flyer.jpg" alt="Upcoming Events Image" class="detail-img">
+                <img src="img/flyer.jpg" alt="Upcoming Events Image" title="Invitation" class="detail-img">
                 <aside class="text-block">
-                    <h2>WORSHIP<br>WITH US<br>THIS<br>SUNDAY</h2>
+                    <h2 class="Uppercase"> worship </h2>
+                    <h2 class="Uppercase"> with us  </h2>
+                    <h2 class="Uppercase"> this </h2>
+                    <h2 class="Uppercase"> sunday </h2>
                 </aside>
             </article>
         </section>
         <section>
             <article class="container content">
-                <img src="pic.img/Worship.jpg" alt="Detailed Description Image" class="detail-img">
+                <img src="img/Worship.jpg" alt="Detailed Description Image" title="Worship song 2" class="detail-img">
                 <aside class="text-block">
-                    <h2>Welcome to Amsterdam International Christian Church<br>Who We Are?</h2>
+                    <h2>Welcome to Amsterdam International Christian Church</h2>
+                    <h2>Who We Are?</h2>
                     <p>With our mother church in London, we are part of a worldwide movement that supports and welcomes everyone who wants to live out their purpose for God. Teachers, engineers, personal trainers, photographers, event coordinators, singer-songwriters, musicians, Youth Mentor, Social Care Workers, IT specialists, lawyers and stay-at-home mothers underscore the professions of some of our members. We also have an ever-growing campus ministry representing various universities in Amsterdam including the University of Amsterdam and Vrij University. With a mentoring structure and community projects that have helped transform the lives of former divorce victims, substance abusers, single mothers and homeless youth, we are striving to live lives worthy of our calling (Ephesians 4:1).</p>
                     <p>Our values are based on love and respect for God's word and all walks of life. We are a zealous congregation, but we also have lots of fun! Simply stated, our purpose is to love God with all of our hearts, all of our minds, all of our souls, and all of our strength.</p>
                 </aside>
@@ -54,7 +60,7 @@
     <footer>
         <section class="footer-container">
             <article class="footer-section contact-info">
-                <h3>Contact Us</h3>
+                <h3><strong>Contact Us</strong></h3>
                 <p>123 Church St, Amsterdam, NL</p>
                 <p>Phone: +31 20 123 4567</p>
                 <p>Email: info@amsterdamchurch.com</p>
@@ -76,6 +82,31 @@
                 <p>&copy; 2024 Amsterdam International Christian Church. All rights reserved.</p>
             </article>
         </section>
+        <h2>Examples</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <section id="cookieMessage" class="cookies-message" style="display: none;"> We use cookies to improve your experience. <button onclick="acceptCookies()">Accept</button> </section> <script> function setCookie(name, value, days) { const date = new Date(); date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); const expires = "expires=" + date.toUTCString(); document.cookie = name + "=" + value + ";" + expires + ";path=/"; } function getCookie(name) { const nameEQ = name + "="; const ca = document.cookie.split(';'); for (let i = 0; i < ca.length; i++) { let c = ca[i]; while (c.charAt(0) === ' ') c = c.substring(1, c.length); if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length); } return null; } function checkCookie() { const user = getCookie("username"); if (user !== null) { alert("Welcome back, " + user + "!"); } else { document.getElementById("cookieMessage").style.display = "block"; } } function acceptCookies() { const userName = prompt("Please enter your name:", ""); if (userName !== "" && userName !== null) { setCookie("username", userName, 365); document.getElementById("cookieMessage").style.display = "none"; alert("Welcome, " + userName + "!"); } } checkCookie(); </script>
+    
     </footer>
     <script>
         function toggleMenu() {

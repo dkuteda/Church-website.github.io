@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;  
 }
+fieldset { border: none; }
+a.active { font-size: 1.2em; /* Increase the text size */ font-weight: bold; /* Optionally make it bold */ }
 body{
+  font-family: 'Poppins';
   min-height: 100vh;
   display: flex;
   align-items: center;

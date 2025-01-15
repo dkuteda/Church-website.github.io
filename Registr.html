@@ -5,66 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
   <link rel="stylesheet" href="css/design4.css">
+  <link rel="icon" href="img/fish.webp" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Wancho&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>      
    <section class="registr-container">
     <header>Registration form</header>
+    <legend>Personal Information</legend>
     <form id="registrationForm" class="form">
-      <section class="input-box">
-        <label>Full Name</label>
-        <input type="text" placeholder="Enter full name" required>
-      </section>
-
-      <section class="input-box">
-        <label>Email address</label>
-        <input type="email" placeholder="Enter email address" required>
-      </section>
-
-      <section class="column">
+      <fieldset>
         <section class="input-box">
-          <label>Phone number</label>
-          <input type="text" placeholder="Enter phone number" required>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required>
         </section>
 
         <section class="input-box">
-          <label>Birth date</label>
-          <input type="date" placeholder="Enter birth date" required>
+          <label>Email address</label>
+          <input type="email" placeholder="Enter email address" required>
         </section>
-      </section>
 
-      <section class="gender-box">
-        <h3>Gender</h3>
-        <section class="gender-option">
-          <section class="gender">
-            <input type="radio" id="check-male" name="gender" checked>
-            <label for="check-male">Male</label>
-          </section>
-          <section class="gender">
-            <input type="radio" id="check-female" name="gender">
-            <label for="check-female">Female</label>
-          </section>
-          <section class="gender">
-            <input type="radio" id="check-other" name="gender">
-            <label for="check-other">Prefer not to say</label>
-          </section>
-        </section>
-      </section>
-      <section class="input-box address">
-        <label>Address</label>
         <section class="column">
-          <input type="text" placeholder="Enter street address" required>
-          <input type="text" placeholder="Enter your city" required>
-        </section>
-        <section class="column">
-          <input type="text" placeholder="Enter house number" required>
-          <input type="text" placeholder="Enter postal code" required>
-        </section>
-      </section>
+          <section class="input-box">
+            <label>Phone number</label>
+            <input type="text" placeholder="Enter phone number" required>
+          </section>
 
-      <section class="column">
-        <a class="button-link common-button" href="Contact.html">Return</a>
-        <button type="button" id="confirmButton" class="button-link common-button">Confirm</button>
-      </section>    
+          <section class="input-box">
+            <label>Birth date</label>
+            <input type="date" placeholder="Enter birth date" required>
+          </section>
+        </section>
+
+        <section class="gender-box">
+          <h3>Gender</h3>
+          <section class="gender-option">
+            <section class="gender">
+              <input type="radio" id="check-male" name="gender" checked>
+              <label for="check-male">Male</label>
+            </section>
+            <section class="gender">
+              <input type="radio" id="check-female" name="gender">
+              <label for="check-female">Female</label>
+            </section>
+            <section class="gender">
+              <input type="radio" id="check-other" name="gender">
+              <label for="check-other">Prefer not to say</label>
+            </section>
+          </section>
+        </section>
+        <section class="input-box address">
+          <label>Address</label>
+          <section class="column">
+            <input type="text" placeholder="Enter street address" required>
+            <input type="text" placeholder="Enter your city" required>
+          </section>
+          <section class="column">
+            <input type="text" placeholder="Enter house number" required>
+            <input type="text" placeholder="Enter postal code" required>
+          </section>
+        </section>
+
+        <section class="column">
+          <a class="button-link common-button" href="Contact.html">Return</a>
+          <input type="submit" id="confirmButton" class="button-link common-button" href="Confirm.html" value="submit">
+        </section>
+      </fieldset>
     </form>      
    </section>
 
