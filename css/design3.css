@@ -216,6 +216,7 @@ table tr:nth-child(odd) {
 @media (max-width: 768px) {
   header {
       flex-direction: column;
+      display: flex;
       justify-content: flex-start;
   }
   .nav-links {
